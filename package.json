@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "node-sass": "^9.0.0",
+    "sass": "^1.83.0"
+  },
+  "name": "portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+     "build-css": "sass main.scss main.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

@@ -1,0 +1,390 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  padding-bottom: 6.5 rem;
+}
+
+.navbar {
+  height: 139px;
+  background: #fff;
+}
+@media (max-width: 900px) {
+  .navbar {
+    height: 100px;
+  }
+}
+.navbar .navbar-wrapper {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1;
+  transform: translate3d(0px, 0px, 0px);
+  line-height: normal;
+  font-family: "Montserrat", sans-serif;
+}
+@media (min-width: 48em) {
+  .navbar .navbar-wrapper .navbar-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    max-width: 100%;
+    padding: 15px 20px;
+    margin: 0px auto;
+  }
+}
+.navbar .navbar-wrapper .navbar-main .logo {
+  display: block;
+  flex: none;
+  float: left;
+  font-size: 1.5em;
+  text-decoration: none;
+  margin-top: 10px;
+  line-height: normal;
+}
+.navbar .navbar-wrapper .navbar-main .logo .grey-color {
+  color: #868e96;
+  font-size: 1.5em;
+  line-height: normal;
+}
+.navbar .navbar-wrapper .navbar-main .logo .logo-name {
+  font-family: "Agustina", sans-serif;
+  font-weight: bold;
+  font-variant-ligatures: no-common-ligatures;
+  padding: 0 10px;
+  color: rgb(85, 26, 139);
+  font-size: 28.5px;
+  font-stretch: 100%;
+  font-weight: 700;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.navbar .navbar-wrapper .navbar-main ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  display: inline-block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  unicode-bidi: isolate;
+}
+.navbar .navbar-wrapper .navbar-main ul li {
+  float: left;
+  display: list-item;
+  list-style: none;
+  text-align: -webkit-match-parent;
+  unicode-bidi: isolate;
+}
+.navbar .navbar-wrapper .navbar-main ul li a {
+  display: block;
+  padding: 15px 20px;
+  color: #000000;
+  text-decoration: none;
+  font-size: 19px;
+  font-stretch: 100%;
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+}
+.navbar .navbar-wrapper .navbar-main ul li a .switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+}
+
+.greet {
+  animation-fill-mode: both;
+  animation-duration: 1000ms;
+  animation-delay: 0ms;
+  animation-iteration-count: 1;
+  opacity: 1;
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 2rem;
+  display: block;
+  animation-name: greetingAnimation;
+}
+@keyframes greetingAnimation {
+  0% {
+    opacity: 0;
+    transform: translate3d(0px, 40px, 0px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.greet .greet-main {
+  display: flex;
+  line-height: normal;
+  flex: 1 1;
+  margin-bottom: 30px;
+}
+.greet .greet-main .greet-main-text {
+  display: block;
+  unicode-bidi: isolate;
+  font-family: "Montserrat", sans-serif;
+  font-size: 19px;
+  font-stretch: 100%;
+  font-weight: 400;
+}
+.greet .greet-main .greet-main-text h1 {
+  display: block;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 1.1;
+  color: #000000 !important;
+}
+.greet .greet-main .greet-main-text .wave-emoji {
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  animation-name: wave;
+  display: inline-block;
+  transform-origin: 70% 70%;
+}
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-10deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+  40% {
+    transform: rotate(9deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.greet .greet-main .greet-main-text p {
+  color: #868e96;
+  display: block;
+  font-size: 20px;
+  font-stretch: 100%;
+  font-weight: 400px;
+  line-height: 40px;
+  margin-block-start: 20px;
+  margin-block-end: 20px;
+}
+.greet .greet-main .greet-main-text .social-media-div {
+  font-size: 2em;
+  display: block;
+  unicode-bidi: isolate;
+  line-height: normal;
+  font-size: 38px;
+  font-stretch: 100%;
+  font-weight: 400;
+}
+.greet .greet-main .greet-main-text .social-media-div .icon-button {
+  margin-bottom: 10px;
+  color: rgb(85, 26, 139);
+  font-size: 38px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.greet .greet-main .greet-main-text .social-media-div .github i {
+  background-color: #333;
+}
+.greet .greet-main .greet-main-text .social-media-div .linkedin i {
+  background-color: #0e76a8;
+}
+.greet .greet-main .greet-main-text .social-media-div .google i {
+  background-color: #ea4335;
+}
+.greet .greet-main .greet-main-text .social-media-div .gitlab i {
+  background-color: #fca326;
+}
+.greet .greet-main .greet-main-text .social-media-div .facebook i {
+  background-color: #3b5998;
+}
+.greet .greet-main .greet-main-text .social-media-div .medium i {
+  background-color: #000;
+}
+.greet .greet-main .greet-main-text .social-media-div .stack-overflow i {
+  background-color: #f48024;
+}
+.greet .greet-main .greet-main-text .social-media-div .icon-button i {
+  color: #fff;
+  border-radius: 2.6rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.3rem;
+  height: 2.6rem;
+  line-height: 2.6rem;
+  margin: 0 5px;
+  position: relative;
+  text-align: center;
+  user-select: none;
+  width: 2.6rem;
+  margin-bottom: 10px;
+  transition: 0.2s ease-in;
+}
+.greet .greet-main .greet-main-text .social-media-div .icon-button i:hover {
+  background-color: #141414;
+}
+.greet .greet-main .greet-main-text .social-media-div .icon-button i .fa {
+  font-weight: 400;
+  font-size: 50px;
+  text-rendering: auto;
+}
+.greet .greet-main .greet-main-text .button-greeting-div {
+  display: flex;
+  margin-top: 40px;
+  unicode-bidi: isolate;
+}
+.greet .greet-main .greet-main-text .button-greeting-div .main-button {
+  background-color: #55198b;
+  border: #55198b;
+  color: #fff;
+  font-weight: 700;
+  width: max-content;
+  padding: 13px 22px;
+  margin-right: 50px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin-top: 20px;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.greet .greet-main .greet-main-text .button-greeting-div .main-button:hover {
+  background-color: #fff;
+  color: #55198b;
+  border: #55198b;
+}
+.greet .greet-main .greet-main-img {
+  margin-bottom: 30px;
+}
+
+.skills {
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 4rem;
+  display: block;
+}
+.skills .skill-main-div {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+.skills .skill-main-div .skill-text {
+  animation-fill-mode: both;
+  animation-duration: 1000ms;
+  animation-delay: 0ms;
+  animation-iteration-count: 1;
+  opacity: 1;
+  animation-name: blabla;
+  margin-bottom: 30px;
+  flex: 1 1;
+  margin-left: 50px;
+}
+@keyframes blabla {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0px, 0px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.skills .skill-main-div .skill-text .skill-heading {
+  font-size: 40px;
+  font-weight: 400;
+  display: block;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.skills .skill-main-div .skill-text .skill-text-subtitle {
+  color: #868e96;
+  display: block;
+  margin-block-start: 19px;
+  margin-block-end: 19px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 19px;
+  unicode-bidi: isolate;
+}
+.skills .skill-main-div .skill-text .software-skill-section .software-skills {
+  display: block;
+  unicode-bidi: isolate;
+  line-height: normal;
+}
+.skills .skill-main-div .skill-text .software-skill-section .software-skills .dev-icons {
+  padding-left: 0;
+  list-style: none;
+  font-size: 3rem;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  text-align: center;
+}
+.skills .skill-main-div .skill-text .software-skill-section .software-skills ul {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+.skills .skill-main-div .skill-text .software-skill-section .software-skills ul .software-skill-inline {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.skills .skill-main-div .skill-text .software-skill-section .software-skills ul p {
+  color: #868e96;
+  font-size: 10px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.skills .skill-main-div .skill-text .software-skill-section .software-skills ul li {
+  text-align: -webkit-match-parent;
+  unicode-bidi: isolate;
+}
+.skills .skill-main-div .skill-text .software-skill-section .software-skills ul li i {
+  color: #868e96;
+}
+.skills .skill-main-div .skill-text .software-skill-section .software-skills ul li .fa {
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=main.css.map */

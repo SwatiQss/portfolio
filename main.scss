@@ -1,0 +1,436 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+$crimson: crimson;
+$black: #0d0d0d;
+$light-bg: #1a1a1a;
+$white: #fff;
+$box-shadow: 0.5rem 1 rem rgba(0, 0, 0, 0.7);
+$glow: rgba(220, 20, 60, 0.7);
+$light-gray: #f9f9f9;
+$dark-gray: #333;
+$colour_gradient: linear-gradient(
+  90deg,
+  rgba(182, 36, 114, 1) 0%,
+  rgba(184, 40, 85, 0.904572564612326) 35%,
+  rgba(255, 0, 52, 0.8986083499005965) 100%
+);
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  padding-bottom: 6.5 rem;
+}
+.navbar {
+  height: 139px;
+  background: #fff;
+  @media (max-width: 900px) {
+    height: 100px;
+  }
+  .navbar-wrapper {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+    transform: translate3d(0px, 0px, 0px);
+    line-height: normal;
+    font-family: "Montserrat", sans-serif;
+
+    .navbar-main {
+      @media (min-width: 48em) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #fff;
+        max-width: 100%;
+        padding: 15px 20px;
+        margin: 0px auto;
+      }
+
+      .logo {
+        display: block;
+        flex: none;
+        float: left;
+        font-size: 1.5em;
+        text-decoration: none;
+        margin-top: 10px;
+        line-height: normal;
+        .grey-color {
+          color: #868e96;
+          font-size: 1.5em;
+          line-height: normal;
+        }
+        .logo-name {
+          font-family: "Agustina", sans-serif;
+          font-weight: bold;
+          font-variant-ligatures: no-common-ligatures;
+          padding: 0 10px;
+          color: rgb(85, 26, 139);
+          font-size: 28.5px;
+          font-stretch: 100%;
+          font-weight: 700;
+          padding-left: 10px;
+          padding-right: 10px;
+          padding-top: 0px;
+          padding-bottom: 0px;
+        }
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+        display: inline-block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+        unicode-bidi: isolate;
+        li {
+          float: left;
+          display: list-item;
+          list-style: none;
+          text-align: -webkit-match-parent;
+          unicode-bidi: isolate;
+          a {
+            display: block;
+            padding: 15px 20px;
+            color: #000000;
+            text-decoration: none;
+            font-size: 19px;
+            font-stretch: 100%;
+            font-family: "Montserrat", sans-serif;
+            text-align: left;
+            .switch {
+              position: relative;
+              display: inline-block;
+              width: 50px;
+              height: 26px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.greet {
+      animation-fill-mode: both;
+      animation-duration: 1000ms;
+      animation-delay: 0ms;
+      animation-iteration-count: 1;
+      opacity: 1;
+      width: 90%;
+      padding: 20px 10px;
+      margin: 0px auto;
+      margin-top: 2rem;
+      display: block;
+      animation-name: greetingAnimation;
+      @keyframes greetingAnimation {
+        0% {
+          opacity: 0;
+          transform: translate3d(0px, 40px, 0px);
+        }
+        100% {
+          opacity: 1;
+          transform: none;
+        }
+      }
+
+      .greet-main {
+        display: flex;
+        line-height: normal;
+        flex: 1 1;
+        margin-bottom: 30px;
+        .greet-main-text {
+          display: block;
+          unicode-bidi: isolate;
+          font-family: "Montserrat", sans-serif;
+          font-size: 19px;
+          font-stretch: 100%;
+          font-weight: 400;
+
+          h1 {
+            display: block;
+            margin-block-start: 0.67em;
+            margin-block-end: 0.67em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+            font-size: 50px;
+            line-height: 1.1;
+            color: #000000 !important;
+          }
+          .wave-emoji{
+            animation-duration: 1.8s;
+            animation-iteration-count: infinite;
+            animation-name: wave;
+            display: inline-block;
+            transform-origin: 70% 70%;
+            @keyframes wave {
+              0%{
+                transform: rotate(0deg);
+              }
+              10%{
+                transform: rotate(-10deg);
+              }
+              20%{
+
+              }
+              30%{
+                     transform: rotate(-10deg);
+              }
+              40%{
+                transform: rotate(9deg);
+
+              }
+              50%{
+                    transform: rotate(0deg);
+              }
+              100%{
+                       transform: rotate(0deg);
+              }
+              
+            }
+          }
+          p{
+            color: #868e96;
+            display: block;
+            font-size: 20px;
+            font-stretch: 100%;
+            font-weight: 400px;
+            line-height: 40px;
+            margin-block-start: 20px;
+            margin-block-end: 20px;
+            
+          }
+          .social-media-div{
+            font-size: 2em;
+            display: block;
+            unicode-bidi: isolate;
+            line-height: normal;
+            font-size: 38px;
+            font-stretch: 100%;
+            font-weight: 400;
+            .icon-button{
+              margin-bottom: 10px;
+              color: rgb(85, 26, 139);
+              font-size: 38px;
+              font-weight: 400;
+              //text-decoration-color: rgb(0,0,238);
+              text-decoration:none ;
+              
+            }
+            .github i{
+              background-color: #333;
+            }
+          
+            .linkedin i{
+              background-color: #0e76a8;
+            }
+            .google i{
+              background-color: #ea4335;
+            }
+            .gitlab i{
+              background-color: #fca326;
+            }
+            .facebook i{
+              background-color: #3b5998;
+            }
+            .medium i{
+              background-color: #000;
+            }
+            .stack-overflow i{
+              background-color: #f48024;
+            }
+            .icon-button i{
+              color: #fff;
+              border-radius: 2.6rem;
+              cursor: pointer;
+              display: inline-block;
+              font-size: 1.3rem;
+              height: 2.6rem;
+              line-height: 2.6rem;
+              margin: 0 5px;
+              position: relative;
+              text-align: center;
+              user-select: none;
+              width: 2.6rem;
+              margin-bottom: 10px;
+              transition: 0.2s ease-in;
+              &:hover{
+                background-color: #141414;
+              }
+              
+              .fa{
+                font-weight: 400;
+                font-size: 50px;
+                text-rendering: auto;
+              }
+            }
+           
+          }
+          .button-greeting-div{
+            display: flex;
+            margin-top: 40px;
+            unicode-bidi: isolate;
+            .main-button{
+              background-color: #55198b;
+              border: #55198b;
+              color: #fff;
+              font-weight: 700;
+              width: max-content;
+              padding: 13px 22px;
+              margin-right: 50px;
+              text-transform: uppercase;
+              border-radius: 6px;
+              text-align: center;
+              text-decoration: none;
+              display: block;
+              margin-top: 20px;
+              font-size: 1.4rem;
+              cursor: pointer;
+
+              &:hover{
+                background-color: #fff;
+                color:#55198b;
+                border: #55198b;
+              }
+            }
+          }
+        }
+        
+        .greet-main-img{
+          margin-bottom: 30px;
+
+        }
+
+      }
+    }
+ .skills{
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 4rem;
+  display: block;
+  .skill-main-div{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    .skill-text{
+      
+      animation-fill-mode: both;
+      animation-duration: 1000ms;
+      animation-delay: 0ms;
+      animation-iteration-count: 1;
+      opacity: 1;
+      animation-name: blabla;
+      margin-bottom: 30px;
+      flex: 1 1;
+      margin-left: 50px;
+      @keyframes blabla {
+        0%{
+          opacity: 0;
+          transform: translate3d(100%,0px,0px);
+        }
+        100%{
+          opacity: 1;
+          transform: none;
+        }
+        
+      }
+      .skill-heading{
+        font-size: 40px;
+        font-weight: 400;
+        display: block;
+        margin-block-start: 0.67em;
+        margin-block-end: 0.67em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+      
+
+      }
+      .skill-text-subtitle{
+        color: #868e96;
+        display: block;
+        margin-block-start: 19px;
+        margin-block-end: 19px;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-size: 19px;
+        unicode-bidi: isolate;
+        
+       
+
+      }
+      .software-skill-section{
+        .software-skills{
+          display: block;
+          unicode-bidi: isolate;
+          line-height: normal;
+
+          
+          
+          .dev-icons{
+            padding-left: 0;
+            list-style: none;
+            font-size: 3rem;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            text-align: center;
+          }
+          ul{
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 40px;
+            .software-skill-inline{
+              display: inline-block;
+              margin-right: 20px;
+              margin-bottom: 20px;
+            }
+            p{
+              color: #868e96;
+              font-size: 10px;
+              display: block;
+              margin-block-start: 1em;
+              margin-block-end: 1em;
+              margin-inline-start: 0px;
+              margin-inline-end: 0px;
+            }
+            li{
+              text-align: -webkit-match-parent;
+              unicode-bidi: isolate;
+              i{
+                color: #868e96;
+              }
+              .fa{
+                font-weight: 600;
+              }
+            }
+          }
+        }
+
+      }
+
+
+
+    }
+  }
+
+ }   
+  
+
