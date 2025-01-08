@@ -380,11 +380,303 @@ body {
   text-align: -webkit-match-parent;
   unicode-bidi: isolate;
 }
+.skills .skill-main-div .skill-text .software-skill-section .software-skills ul li svg path {
+  fill: #868e96;
+}
 .skills .skill-main-div .skill-text .software-skill-section .software-skills ul li i {
   color: #868e96;
 }
 .skills .skill-main-div .skill-text .software-skill-section .software-skills ul li .fa {
   font-weight: 600;
+}
+.skills .skill-main-div .skill-text .skills-text-section {
+  display: block;
+  line-height: normal;
+  font-weight: 400;
+  unicode-bidi: isolate;
+}
+.skills .skill-main-div .skill-text .skills-text-section .skills-text {
+  color: #868e96;
+  font-size: 19px;
+  font-stretch: 100%;
+  font-weight: 400;
+}
+
+.skills-container {
+  animation-fill-mode: both;
+  animation-duration: 1000ms;
+  animation-delay: 0ms;
+  animation-iteration-count: 1;
+  opacity: 1;
+  animation-name: skill-container-animation;
+  display: flex;
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 2rem;
+}
+@keyframes skill-container-animation {
+  0% {
+    opacity: 0;
+    transform: translate3d(0px, 20px, 0px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.skills-container .skills-bar {
+  line-height: 4rem;
+  flex: 1 1;
+  margin-bottom: 30px;
+}
+.skills-container .skills-bar .skills-heading {
+  font-size: 40px;
+  font-stretch: 100%;
+  font-weight: 400;
+  line-height: 64px;
+  margin-block-start: 26.8px;
+  margin-block-end: 26.8px;
+}
+.skills-container .skills-bar .skill {
+  line-height: 3.5vw;
+  font-size: 19px;
+  color: #000000;
+}
+.skills-container .skills-bar .skill .meter {
+  height: 20px;
+  position: relative;
+  background: rgb(243, 239, 239);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.skills-container .skills-bar .skill .meter span {
+  display: block;
+  height: 100%;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: #aaa5ff;
+  position: relative;
+  overflow: hidden;
+}
+
+.education-section {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 20px 0px;
+  margin: 0px auto;
+  margin-top: 2rem;
+}
+.education-section * {
+  flex: 1 1;
+  margin-bottom: 30px;
+}
+.education-section .education-heading {
+  font-size: 40px;
+  font-weight: 400;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  line-height: normal;
+}
+.education-section .education-card-container {
+  padding-top: 0px;
+  display: flex;
+  flex-direction: column;
+}
+.education-section .education-card-container .education-card-first .education-card-content {
+  animation-fill-mode: both;
+  animation-duration: 1000ms;
+  animation-delay: 0ms;
+  animation-iteration-count: 1;
+  opacity: 1;
+  animation-name: card-animation;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+@keyframes card-animation {
+  0% {
+    opacity: 0;
+    transform: translate3d(-100%, 0px, 0px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.education-section .education-card-container .education-card-first .education-card-content .education-img {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 0.5rem;
+  margin-right: 0px;
+  object-fit: cover;
+  box-shadow: 0 0 0.5rem 1 rem rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+.education-section .education-card-container .education-card-first .education-card-content .education-img img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+.education-section .education-card-container .education-card-first .education-card-content .education-text {
+  max-width: 90%;
+  display: block;
+  unicode-bidi: isolate;
+  line-height: normal;
+}
+.education-section .education-card-container .education-card-first .education-card-content .education-text .education-text-heading {
+  font-size: 20px;
+  height: 23px;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+  margin-block-start: 1.67em;
+  margin-block-end: 1.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.education-section .education-card-container .education-card-first .education-card-content .education-text .education-text-detail {
+  display: block;
+  unicode-bidi: isolate;
+}
+.education-section .education-card-container .education-card-first .education-card-content .education-text .education-text-detail .education-text-subHeader {
+  color: #000000;
+  font-weight: 700;
+  margin: 0px;
+  line-height: normal;
+  display: block;
+  margin-block-start: 1.67em;
+  margin-block-end: 1.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.education-section .education-card-container .education-card-first .education-card-content .education-text .education-text-detail .education-text-duration {
+  font-size: 16px;
+  color: #000000;
+  margin: 0px;
+  padding-top: 0.5rem;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.education-section .education-card-container .education-card-first .education-card-content .education-text .education-text-detail .education-text-description {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
+.education-section .education-card-container .education-card-first .education-card-content .education-text .education-text-detail .education-text-bullets {
+  display: block;
+  unicode-bidi: isolate;
+}
+.education-section .education-card-container .education-card-second .education-card-content {
+  animation-fill-mode: both;
+  animation-duration: 1000ms;
+  animation-delay: 0ms;
+  animation-iteration-count: 1;
+  opacity: 1;
+  animation-name: card-animation;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+@keyframes card-animation {
+  0% {
+    opacity: 0;
+    transform: translate3d(-100%, 0px, 0px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.education-section .education-card-container .education-card-second .education-card-content .education-img {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 0.5rem;
+  margin-right: 0px;
+  object-fit: cover;
+  box-shadow: 0 0 0.5rem 1 rem rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+.education-section .education-card-container .education-card-second .education-card-content .education-img img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+.education-section .education-card-container .education-card-second .education-card-content .education-text {
+  max-width: 90%;
+  display: block;
+  unicode-bidi: isolate;
+  line-height: normal;
+}
+.education-section .education-card-container .education-card-second .education-card-content .education-text .education-text-heading {
+  font-size: 20px;
+  height: 23px;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+  margin-block-start: 1.67em;
+  margin-block-end: 1.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.education-section .education-card-container .education-card-second .education-card-content .education-text .education-text-detail {
+  display: block;
+  unicode-bidi: isolate;
+}
+.education-section .education-card-container .education-card-second .education-card-content .education-text .education-text-detail .education-text-subHeader {
+  color: #000000;
+  font-weight: 700;
+  margin: 0px;
+  line-height: normal;
+  display: block;
+  margin-block-start: 1.67em;
+  margin-block-end: 1.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.education-section .education-card-container .education-card-second .education-card-content .education-text .education-text-detail .education-text-duration {
+  font-size: 16px;
+  color: #000000;
+  margin: 0px;
+  padding-top: 0.5rem;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.education-section .education-card-container .education-card-second .education-card-content .education-text .education-text-detail .education-text-description {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
+.education-section .education-card-container .education-card-second .education-card-content .education-text .education-text-detail .education-text-bullets {
+  display: block;
+  unicode-bidi: isolate;
 }
 
 /*# sourceMappingURL=main.css.map */
