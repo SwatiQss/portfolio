@@ -474,7 +474,6 @@ body {
 }
 .education-section * {
   flex: 1 1;
-  margin-bottom: 30px;
 }
 .education-section .education-heading {
   font-size: 40px;
@@ -490,12 +489,37 @@ body {
   display: flex;
   flex-direction: column;
 }
+.education-section .education-card-container .education-card-first .education-card-border {
+  animation-fill-mode: both;
+  animation-duration: 2000ms;
+  animation-delay: 0ms;
+  animation-iteration-count: 1;
+  opacity: 1;
+  animation-name: border-animation;
+  width: 90%;
+  height: 30px;
+  border-top: 2px solid rgba(211, 211, 211, 0.397);
+  margin-bottom: 20px;
+  transition: width 0.6s ease-in-out;
+}
+@keyframes border-animation {
+  0% {
+    transform: translate3d(-100%, 0px, 0px);
+  }
+  100% {
+    transform: none;
+  }
+}
+.education-section .education-card-container .education-card-first .education-card-border:scrolled {
+  background-color: #aaa5ff;
+}
 .education-section .education-card-container .education-card-first .education-card-content {
   animation-fill-mode: both;
   animation-duration: 1000ms;
   animation-delay: 0ms;
   animation-iteration-count: 1;
   opacity: 1;
+  line-height: 0.8;
   animation-name: card-animation;
   display: flex;
   flex-direction: column;
@@ -524,6 +548,7 @@ body {
 .education-section .education-card-container .education-card-first .education-card-content .education-img img {
   overflow-clip-margin: content-box;
   overflow: clip;
+  width: 60px;
 }
 .education-section .education-card-container .education-card-first .education-card-content .education-text {
   max-width: 90%;
@@ -549,13 +574,14 @@ body {
   unicode-bidi: isolate;
 }
 .education-section .education-card-container .education-card-first .education-card-content .education-text .education-text-detail .education-text-subHeader {
+  font-size: 19px;
   color: #000000;
   font-weight: 700;
   margin: 0px;
   line-height: normal;
   display: block;
-  margin-block-start: 1.67em;
-  margin-block-end: 1.67em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
@@ -571,6 +597,7 @@ body {
   margin-inline-end: 0px;
 }
 .education-section .education-card-container .education-card-first .education-card-content .education-text .education-text-detail .education-text-description {
+  font-size: 16px;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   display: block;
@@ -581,8 +608,34 @@ body {
   unicode-bidi: isolate;
 }
 .education-section .education-card-container .education-card-first .education-card-content .education-text .education-text-detail .education-text-bullets {
+  font-size: 16px;
   display: block;
+  color: #868e96;
   unicode-bidi: isolate;
+}
+.education-section .education-card-container .education-card-second .education-card-border {
+  animation-fill-mode: both;
+  animation-duration: 2000ms;
+  animation-delay: 0ms;
+  animation-iteration-count: 1;
+  opacity: 1;
+  animation-name: border-animation;
+  width: 90%;
+  height: 30px;
+  border-top: 2px solid rgba(211, 211, 211, 0.397);
+  margin-bottom: 20px;
+  transition: width 0.6s ease-in-out;
+}
+@keyframes border-animation {
+  0% {
+    transform: translate3d(-100%, 0px, 0px);
+  }
+  100% {
+    transform: none;
+  }
+}
+.education-section .education-card-container .education-card-second .education-card-border:scrolled {
+  background-color: #aaa5ff;
 }
 .education-section .education-card-container .education-card-second .education-card-content {
   animation-fill-mode: both;
@@ -590,6 +643,7 @@ body {
   animation-delay: 0ms;
   animation-iteration-count: 1;
   opacity: 1;
+  line-height: 0.8;
   animation-name: card-animation;
   display: flex;
   flex-direction: column;
@@ -618,6 +672,7 @@ body {
 .education-section .education-card-container .education-card-second .education-card-content .education-img img {
   overflow-clip-margin: content-box;
   overflow: clip;
+  width: 60px;
 }
 .education-section .education-card-container .education-card-second .education-card-content .education-text {
   max-width: 90%;
@@ -643,13 +698,14 @@ body {
   unicode-bidi: isolate;
 }
 .education-section .education-card-container .education-card-second .education-card-content .education-text .education-text-detail .education-text-subHeader {
+  font-size: 19px;
   color: #000000;
   font-weight: 700;
   margin: 0px;
   line-height: normal;
   display: block;
-  margin-block-start: 1.67em;
-  margin-block-end: 1.67em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
@@ -665,6 +721,7 @@ body {
   margin-inline-end: 0px;
 }
 .education-section .education-card-container .education-card-second .education-card-content .education-text .education-text-detail .education-text-description {
+  font-size: 16px;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   display: block;
@@ -675,7 +732,9 @@ body {
   unicode-bidi: isolate;
 }
 .education-section .education-card-container .education-card-second .education-card-content .education-text .education-text-detail .education-text-bullets {
+  font-size: 16px;
   display: block;
+  color: #868e96;
   unicode-bidi: isolate;
 }
 
